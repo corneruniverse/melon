@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://bjhna44rt2qld"]
+
+[ext_resource type="PackedScene" uid="uid://dejeieuontln5" path="res://Scenes/crane.tscn" id="1_mlbwg"]
+[ext_resource type="PackedScene" uid="uid://b0uafcm7i66j3" path="res://Scenes/basket.tscn" id="2_smwf8"]
+
+[node name="World" type="Node2D"]
+
+[node name="Crane" parent="." instance=ExtResource("1_mlbwg")]
+position = Vector2(511, 89)
+
+[node name="Basket" parent="." instance=ExtResource("2_smwf8")]
+position = Vector2(530, 334)
+scale = Vector2(30.35, 30.35)

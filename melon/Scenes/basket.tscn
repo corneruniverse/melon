@@ -1,0 +1,56 @@
+[gd_scene load_steps=5 format=3 uid="uid://b0uafcm7i66j3"]
+
+[ext_resource type="Texture2D" uid="uid://bjlri3yiqu836" path="res://Assets/icon.svg" id="1_dvhbc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_eskob"]
+size = Vector2(2, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7udji"]
+size = Vector2(2, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_j4y8v"]
+size = Vector2(20, 2)
+
+[node name="Basket" type="Node2D"]
+
+[node name="Area2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Area2D"]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(-9, 0)
+shape = SubResource("RectangleShape2D_eskob")
+debug_color = Color(0.388308, 0.472208, 1, 0.42)
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D/CollisionShape2D3"]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(-0.18286, -0.13132)
+rotation = 3.14159
+scale = Vector2(0.0171428, 0.158573)
+texture = ExtResource("1_dvhbc")
+
+[node name="Area2D2" type="StaticBody2D" parent="."]
+position = Vector2(9, 0)
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Area2D2"]
+shape = SubResource("RectangleShape2D_7udji")
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D2/CollisionShape2D2"]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(0, -0.12217)
+scale = Vector2(-0.02, -0.158716)
+texture = ExtResource("1_dvhbc")
+
+[node name="Area2D3" type="StaticBody2D" parent="."]
+position = Vector2(9, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D3"]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(-9, 9)
+shape = SubResource("RectangleShape2D_j4y8v")
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D3/CollisionShape2D"]
+modulate = Color(0, 1, 0, 1)
+position = Vector2(0.0592804, 0)
+rotation = 3.14159
+scale = Vector2(0.159411, 0.02)
+texture = ExtResource("1_dvhbc")
