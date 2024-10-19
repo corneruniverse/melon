@@ -1,32 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://dejeieuontln5"]
+[gd_scene load_steps=2 format=3 uid="uid://dejeieuontln5"]
 
 [ext_resource type="Script" path="res://Scripts/crane.gd" id="1_cwbbi"]
-[ext_resource type="Texture2D" uid="uid://bjlri3yiqu836" path="res://Assets/icon.svg" id="2_o4lcv"]
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_oudqq"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("2_o4lcv")
-}],
-"loop": true,
-"name": &"default",
-"speed": 5.0
-}]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_nx0sf"]
 
 [node name="Crane" type="Node2D"]
 script = ExtResource("1_cwbbi")
 
-[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-sprite_frames = SubResource("SpriteFrames_oudqq")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-scale = Vector2(6.43, 6.43)
-shape = SubResource("RectangleShape2D_nx0sf")
-
 [node name="Muzzle" type="Marker2D" parent="."]
-position = Vector2(64.49, 0)

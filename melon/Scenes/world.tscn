@@ -6,8 +6,8 @@
 [node name="World" type="Node2D"]
 
 [node name="Crane" parent="." instance=ExtResource("1_mlbwg")]
-position = Vector2(511, 89)
+position = Vector2(516, 76)
+scale = Vector2(3.24, 3.24)
 
 [node name="Basket" parent="." instance=ExtResource("2_smwf8")]
-position = Vector2(530, 334)
-scale = Vector2(30.35, 30.35)
+position = Vector2(495, 257)

@@ -1,13 +1,13 @@
 [gd_scene load_steps=5 format=3 uid="uid://pyaxu4y32qrs"]
 
 [ext_resource type="Script" path="res://Scripts/melon.gd" id="1_majqw"]
-[ext_resource type="Texture2D" uid="uid://bjlri3yiqu836" path="res://Assets/icon.svg" id="2_yd5y6"]
+[ext_resource type="Texture2D" uid="uid://ci533w4ca70ip" path="res://Assets/slime.png" id="2_x4vr0"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_2nnrb"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_yd5y6")
+"texture": ExtResource("2_x4vr0")
 }],
 "loop": true,
 "name": &"default",
@@ -15,14 +15,16 @@ animations = [{
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_l0rd4"]
+radius = 622.158
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
+scale = Vector2(0.04, 0.035)
 script = ExtResource("1_majqw")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(1, -1)
-scale = Vector2(0.1875, 0.1875)
+scale = Vector2(0.005, 0.005)
 sprite_frames = SubResource("SpriteFrames_2nnrb")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(0.01, 0.009)
 shape = SubResource("CircleShape2D_l0rd4")
