@@ -7,7 +7,7 @@
 
 [node name="Crane" parent="." instance=ExtResource("1_mlbwg")]
 position = Vector2(335, 133)
-scale = Vector2(3.24, 3.24)
+scale = Vector2(0.655, 0.655)
 
 [node name="Basket" parent="." instance=ExtResource("2_smwf8")]
 position = Vector2(320, 793)

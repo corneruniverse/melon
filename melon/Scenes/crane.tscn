@@ -1,8 +1,14 @@
-[gd_scene load_steps=2 format=3 uid="uid://dejeieuontln5"]
+[gd_scene load_steps=3 format=3 uid="uid://dejeieuontln5"]
 
 [ext_resource type="Script" path="res://Scripts/crane.gd" id="1_cwbbi"]
+[ext_resource type="Texture2D" uid="uid://8exh80n43xnc" path="res://Assets/tree.png" id="2_smwqb"]
 
 [node name="Crane" type="Node2D"]
 script = ExtResource("1_cwbbi")
 
 [node name="Muzzle" type="Marker2D" parent="."]
+
+[node name="Tree" type="Sprite2D" parent="."]
+position = Vector2(5.00001, -15)
+scale = Vector2(0.175, 0.175)
+texture = ExtResource("2_smwqb")
