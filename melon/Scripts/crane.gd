@@ -3,12 +3,14 @@ extends CharacterBody2D
 var melon_scene = preload("res://Scenes/melon.tscn")
 var speed = 400  # move speed in pixels/sec
 var target = null
+var axis_x = null
 
 # the character moves to the clicked location.
 # reference: https://kidscancode.org/godot_recipes/4.x/2d/topdown_movement/index.html
 func _input(event):
 	if event.is_action_pressed("click"):
-		target = get_global_mouse_position()
+		axis_x = get_global_mouse_position().x
+		target = Vector2(axis_x, 130)
 
 func _physics_process(delta):
 	if target:
